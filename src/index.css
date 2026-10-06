@@ -1,0 +1,121 @@
+:root {
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Color Tokens - Light Mode */
+  --bg-gradient: radial-gradient(120% 120% at 50% 0%, #f4f6fb 0%, #e9edf5 50%, #dfe5f0 100%);
+  --surface-bg: rgba(255, 255, 255, 0.85);
+  --surface-border: rgba(226, 232, 240, 0.8);
+  --surface-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08), 0 0 1px 1px rgba(15, 23, 42, 0.04);
+  --surface-shadow-hover: 0 25px 50px -12px rgba(15, 23, 42, 0.12), 0 0 1px 1px rgba(15, 23, 42, 0.06);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --accent-primary: #4f46e5;
+  --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --accent-hover: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+  --accent-glow: rgba(79, 70, 229, 0.35);
+
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --input-focus-border: #6366f1;
+  --input-focus-ring: rgba(99, 102, 241, 0.2);
+
+  --btn-secondary-bg: #f8fafc;
+  --btn-secondary-border: #e2e8f0;
+  --btn-secondary-text: #334155;
+  --btn-secondary-hover-bg: #f1f5f9;
+
+  --error-bg: #fef2f2;
+  --error-border: #fecaca;
+  --error-text: #dc2626;
+
+  --success-color: #10b981;
+  --success-bg: #ecfdf5;
+  --success-border: #a7f3d0;
+  --success-text: #047857;
+
+  --badge-bg: rgba(99, 102, 241, 0.08);
+  --badge-text: #4f46e5;
+  --badge-border: rgba(99, 102, 241, 0.2);
+
+  --qr-card-bg: #ffffff;
+  --qr-card-border: #e2e8f0;
+  --qr-card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+
+  --transition-speed: 0.2s;
+}
+
+[data-theme='dark'] {
+  --bg-gradient: radial-gradient(120% 120% at 50% 0%, #0f172a 0%, #090d16 60%, #030712 100%);
+  --surface-bg: rgba(19, 27, 44, 0.75);
+  --surface-border: rgba(255, 255, 255, 0.08);
+  --surface-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+  --surface-shadow-hover: 0 30px 60px -12px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(255, 255, 255, 0.1);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --accent-primary: #6366f1;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --accent-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --accent-glow: rgba(99, 102, 241, 0.45);
+
+  --input-bg: rgba(15, 23, 42, 0.85);
+  --input-border: rgba(255, 255, 255, 0.15);
+  --input-focus-border: #818cf8;
+  --input-focus-ring: rgba(129, 140, 248, 0.25);
+
+  --btn-secondary-bg: rgba(30, 41, 59, 0.7);
+  --btn-secondary-border: rgba(255, 255, 255, 0.1);
+  --btn-secondary-text: #e2e8f0;
+  --btn-secondary-hover-bg: rgba(51, 65, 85, 0.8);
+
+  --error-bg: rgba(239, 68, 68, 0.12);
+  --error-border: rgba(239, 68, 68, 0.3);
+  --error-text: #f87171;
+
+  --success-color: #34d399;
+  --success-bg: rgba(16, 185, 129, 0.12);
+  --success-border: rgba(16, 185, 129, 0.3);
+  --success-text: #6ee7b7;
+
+  --badge-bg: rgba(99, 102, 241, 0.15);
+  --badge-text: #a5b4fc;
+  --badge-border: rgba(99, 102, 241, 0.3);
+
+  --qr-card-bg: #ffffff;
+  --qr-card-border: rgba(255, 255, 255, 0.15);
+  --qr-card-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  font-family: inherit;
+}
